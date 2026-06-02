@@ -1,0 +1,2 @@
+alert("Welcome to Zomata");
+console.log("Zomato was founded in 2008 by Deepinder Goyal and Pankaj Chaddah. The original platform was initially called Foodiebay before being renamed to Zomato in 2010. The initial software development and technical foundations of the app were overseen by Gunjan Patidar, who later became the company's Chief Technology Officer.")
