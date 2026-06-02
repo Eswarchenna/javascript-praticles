@@ -1,0 +1,33 @@
+body {
+    padding: 122px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(145, 109, 179);
+    border-radius: 10px;
+    padding: 90px;
+    width: 397px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    gap: 54px;
+}
+
+
+
+#btnCalculte {
+    background-color: pink;
+    border-radius: 5px;
+    border: black;
+
+    width: 95px;
+
+}

@@ -1,0 +1,66 @@
+body {
+    padding: 122px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(145, 109, 179);
+    border-radius: 10px;
+    padding: 90px;
+    width: 397px;
+    text-align: center;
+    place-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* Spaces out the rows vertically */
+    max-width: 400px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    /* Fixed label width, input takes rest */
+    gap: 20px;
+    /* Space between the label and the input */
+    align-items: center;
+}
+
+input {
+    padding: 2px;
+}
+
+#btnAddition {
+    background-color: darkslateblue;
+    border-radius: 5px;
+    border: black;
+}
+
+#btnSubtraction {
+    background-color: pink;
+    border-radius: 5px;
+    border: black;
+}
+
+#btnMultiplication {
+    background-color: rgb(66, 191, 191);
+    border-radius: 5px;
+    border: black;
+}
+
+#btnDivision {
+    background-color: rgb(102, 78, 125);
+    border-radius: 5px;
+    border: black;
+}
+
+#btnReminder {
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: black;
+}
