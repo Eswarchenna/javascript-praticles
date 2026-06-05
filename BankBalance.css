@@ -1,0 +1,53 @@
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+         text-align: center;
+         padding-top: 50px;
+     }
+
+     .container {
+         width: 350px;
+         margin: auto;
+         background: white;
+         padding: 25px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px gray;
+     }
+
+     h2 {
+         color: #333;
+     }
+
+     .balance {
+         font-size: 24px;
+         color: green;
+         margin: 20px 0;
+     }
+
+     input {
+         width: 90%;
+         padding: 10px;
+         margin: 10px 0;
+     }
+
+     button {
+         padding: 10px 20px;
+         margin: 5px;
+         cursor: pointer;
+         border: none;
+         color: white;
+         border-radius: 5px;
+     }
+
+     .credit {
+         background-color: green;
+     }
+
+     .debit {
+         background-color: red;
+     }
+
+     #message {
+         margin-top: 15px;
+         font-weight: bold;
+     }

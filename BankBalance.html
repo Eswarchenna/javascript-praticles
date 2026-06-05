@@ -1,0 +1,34 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>
+            MY ACCOUNT
+        </title>
+        <script src="BankBalance.js"></script>
+        <link rel="stylesheet" href="BankBalance.css">
+    </head>
+    <body>
+        <div class="container">
+        <h2>Bank Account</h2>
+
+        <div class="balance">
+            Balance: ₹<span id="balance">1000</span>
+        </div>
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <br>
+
+        <button class="credit" onclick="creditAmount()">
+            Credit
+        </button>
+
+        <button class="debit" onclick="debitAmount()">
+            Debit
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+  
+    </body>
+</html>
