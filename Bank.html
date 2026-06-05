@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Account</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .balance {
+            font-size: 24px;
+            color: green;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .credit {
+            background-color: green;
+        }
+
+        .debit {
+            background-color: red;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🏦 Bank Account</h2>
+
+        <div class="balance">
+            Balance: ₹<span id="balance">1000</span>
+        </div>
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <br>
+
+        <button class="credit" onclick="creditAmount()">
+            Credit
+        </button>
+
+        <button class="debit" onclick="debitAmount()">
+            Debit
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        let balance = 1000;
+
+        function creditAmount() {
+            let amount = Number(document.getElementById("amount").value);
+
+            if (amount > 0) {
+                balance += amount;
+
+                document.getElementById("balance").innerText = balance;
+                document.getElementById("message").innerText =
+                    "₹" + amount + " credited successfully.";
+
+                document.getElementById("amount").value = "";
+            } else {
+                document.getElementById("message").innerText =
+                    "Please enter a valid amount.";
+            }
+        }
+
+        function debitAmount() {
+            let amount = Number(document.getElementById("amount").value);
+
+            if (amount <= 0) {
+                document.getElementById("message").innerText =
+                    "Please enter a valid amount.";
+                return;
+            }
+
+            if (amount > balance) {
+                document.getElementById("message").innerText =
+                    "Insufficient balance.";
+                return;
+            }
+
+            balance -= amount;
+
+            document.getElementById("balance").innerText = balance;
+            document.getElementById("message").innerText =
+                "₹" + amount + " debited successfully.";
+
+            document.getElementById("amount").value = "";
+        }
+    </script>
+
+</body>
+</html>
